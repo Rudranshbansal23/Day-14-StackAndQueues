@@ -1,9 +1,12 @@
 package com.bridgelabz.StackAndQueues;
 
 
+import java.util.Scanner;
+
 class Node {
 	public int data;
 	public Node next;
+
 	// Node Constructor for Creating New Node
 	Node(int data) {
 		this.data = data;
@@ -17,6 +20,7 @@ class LinkedList {
 
 	Node head;
 	Node tail;
+
 	// Insert Data in New Node
 	public void insertFirst(int data) {
 		Node newNode = new Node(data);
@@ -73,6 +77,19 @@ class LinkedList {
 			System.out.println("Linked List is Empty.");
 		} else {
 			head = head.next;
+		}
+	}
+
+	// Method for Peak Pop in Stack
+	public void peakPop() {
+		if (head == null) {
+			System.out.println("Stack is Empty.");
+		} else {
+			while (head != null) {
+				System.out.println("Deleted : " + head.data);
+				head = head.next;
+			}
+			head = null;
 		}
 	}
 
