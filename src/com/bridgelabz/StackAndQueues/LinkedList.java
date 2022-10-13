@@ -1,6 +1,5 @@
 package com.bridgelabz.StackAndQueues;
 
-
 import java.util.Scanner;
 
 class Node {
